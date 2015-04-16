@@ -1,0 +1,33 @@
+{
+  "name": "protractor-test-non-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "coffee-script": "^1.9.2",
+    "protractor": "^2.0.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.2"
+  },
+  "scripts": {
+    "prestart": "node ./node_modules/protractor/bin/webdriver-manager update",
+    "start": "node ./node_modules/protractor/bin/webdriver-manager start",
+    "test": "node ./node_modules/protractor/bin/protractor protractor.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewdacenko/protractor-test-non-angular.git"
+  },
+  "keywords": [
+    "protractor",
+    "testing",
+    "e2e"
+  ],
+  "author": "Andrew Dacenko <a.s.dvornik@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewdacenko/protractor-test-non-angular/issues"
+  },
+  "homepage": "https://github.com/andrewdacenko/protractor-test-non-angular"
+}
