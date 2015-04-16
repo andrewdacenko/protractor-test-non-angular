@@ -11,11 +11,7 @@ exports.config = {
   // include glob patterns.
   specs: ['tests/**/*Spec.coffee'],
 
-  suites: {
-    homepage: 'tests/e2e/homepage/**/*Spec.coffee',
-    search: ['tests/e2e/contact_search/**/*Spec.coffee',
-      'tests/e2e/venue_search/**/*Spec.coffee']
-  },
+  baseUrl: 'http://localhost:8080/',
 
   onPrepare: function() {
     global.dv = browser.driver;
@@ -24,7 +20,7 @@ exports.config = {
     };
     isAngularSite(false);
   },
-
+  framework: 'jasmine2',
   // Options to be passed to Jasmine-node.
   jasmineNodeOpts: {
     showColors: true, // Use colors in the command line report.
